@@ -1,0 +1,61 @@
+    p{padding:  10px;
+      text-align:   left; 
+
+    }
+    a{
+      padding:  10px;
+    }
+.question{
+  text-align:   left; 
+}
+.answer{
+  text-align:   left; 
+}
+#btn1{
+
+   background-color: white;
+  color: green;
+  border: 2px solid #4CAF50;
+  margin-right:   150px;
+  margin-top:   10px;
+  padding: 10px 24px;
+  width: 250px;
+
+}
+
+textarea {
+  border-radius: 0.25rem;
+  border-color: #ff8552;
+}
+
+		.form{
+			margin: 200px 600px;
+			width: 300px;
+
+		}
+		.container{
+			background: none;
+      padding-top:  50px;
+      margin-left:   110px;
+		}
+   
+   .box{
+    border:0.1rem solid #ff8552;
+    border-radius: 5px;
+    margin-top:   50px;
+   margin-left: 15px;
+        margin-right: auto;
+        width: 35%;
+        padding:  30px;
+       
+        text-align:   center; 
+        }
+   
+  .gridbox{
+      margin-left: 125px;
+      margin-bottom:  400px;
+      padding-top:  50px;
+           }
+  .card{
+display:  none; 
+  }
