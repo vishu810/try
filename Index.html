@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="fc.css">
+	<head>
+		<title>Flashcard</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	</head>
+
+	<body>
+			<div class="container">
+				<h1>Flash Card</h1>
+				<button class="ui orange basic button" id="btn" onclick="showtext()">Add Question</button>
+				
+				 <form id="form" class="box" style='display: none'>
+
+        <div class="align">
+          <!-- for question and its text area -->
+					<h4 class="question">Question</h4>
+      	<div class="question-form">
+       		<textarea id="QTextarea" cols="60" rows="6"></textarea>
+      	</div>
+         <!-- for quation and its text area-->
+      		<h4 class="answer">Answer</h4>
+      	<div class="answer-form">
+       		<textarea id="ATextarea" cols="60" rows="6"></textarea>
+      	</div>
+         <!-- save button to print quetion nd answer-->
+      		<button type="button" id="btn1" onclick="printQA()">save</button>
+        </div>  
+      		</form>
+			      
+       </div>
+		<div class="row" id="questions-list">
+    	</div>
+
+   <div class="gridbox" >
+     <div class="ui cards card" id="hide" style="display:none;">    	
+      <div>
+         <!--for printing question -->
+       <strong><p id="QA"></p></strong>  
+      </div>
+      <div>  
+         <!--for printing answer-->
+      	<p id="AQ" style="display:none;"></p>
+       </div> 
+         <!-- link for showing answer -->
+    	 	<a style="display:none;" id="showhide" onclick="showText('AQ')" href="javascript:void(0);">show or hide Answer</a>
+     </div>
+    </div>
+
+
+	</body>
+
+<script src="flashcard.js">
+</script>
+
+</html>
